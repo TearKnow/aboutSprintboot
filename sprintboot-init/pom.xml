@@ -29,6 +29,15 @@
     <properties>
         <java.version>25</java.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>github-rich-repo</id>
+            <name>The Maven Repository on Github</name>
+            <url>https://michaelliao.github.io/how-to-become-rich/maven-repo/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,6 +53,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.itranswarp.rich</groupId>
+            <artifactId>how-to-become-rich</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

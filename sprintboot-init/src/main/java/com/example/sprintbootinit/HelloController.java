@@ -1,5 +1,6 @@
 package com.example.sprintbootinit;
 
+import com.itranswarp.rich.Millionaire;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -33,5 +34,12 @@ public class HelloController {
         System.out.println("=================");
         System.out.println(person);
         return "Hello my spring boot";
+    }
+
+    @RequestMapping("/rich")
+    public String Rich() {
+        Millionaire millionaire = new Millionaire();
+        System.out.println(millionaire.howToBecomeRich());
+        return "引入第三方包";
     }
 }
